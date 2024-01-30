@@ -1,6 +1,9 @@
 --
 -- create tables
---
+--1. Maak tabellen en velden (CREATE TABLE commando) in je database waarin alle informatie kan worden opgeslagen die je over je producten wilt tonen.
+--Tip: je kunt een multipliciteitendiagram gebruiken als tussenstap voor je database-ontwerp
+--2. Vul de tabellen met informatie (INSERT commando)
+--3. Voeg eventueel plaatjes toe (web/images map)
 
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -21,9 +24,12 @@ CREATE TABLE products (
 --
 
 insert into products (name, description, code, price) values ('The sno shoe', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '816905633-0', 10.5);
-insert into products (name, description, code, price) values ('Pizzi patta', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11);
-insert into products (name, description, code, price) values ('Etanol flippers , The', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5);
-insert into products (name, description, code, price) values ('Etanol Walkers (members only), el pecador de la pradera', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5);
+insert into products (name, description, code, price) values ('Pizzi patta (members only)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11);
+insert into products (name, description, code, price) values ('The Etanol flippers ', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5);
+insert into products (name, description, code, price) values ('Etanol Walkers , el pecador de la pradera', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5);
 insert into products (name, description, code, price) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
 insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 
+CREATE TABLE Sneakers (
+  id INTEWGER PRIMARY KEY
+)
