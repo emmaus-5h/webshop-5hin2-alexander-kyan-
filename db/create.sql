@@ -11,6 +11,9 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2)
+  interest_id INTEGER,
+  
+  
 );
 
 
@@ -32,4 +35,19 @@ insert into products (name, description, code, price) values ('Velvet Goldmine',
 
 CREATE TABLE Sneakers (
   id INTEGER PRIMARY KEY
-  
+
+
+
+
+
+
+   insert into products(name,description,code,price,intrest,delivery time, category) values ("the sno shoe","Mauris enim leo, rhoncus sed,
+ vestibulum sit amet, cursus id.:","816905633-0",10.5);
+  insert into products(name,description,code,price) values ("the sno shoe","Mauris enim leo, rhoncus sed,
+  vestibulum sit amet, cursus id.:","816905633-0",10.5);
+  insert into products(name,description,code,price) values ("the sno shoe","Mauris enim leo, rhoncus sed,
+  vestibulum sit amet, cursus id.:","816905633-0",10.5);
+ insert into products(name,description,code,price) values ("the sno shoe","Mauris enim leo, rhoncus sed,
+ vestibulum sit amet, cursus id.:","816905633-0",10.5);
+ insert into products(name,description,code,price) values ("the sno shoe","Mauris enim leo, rhoncus sed,
+ vestibulum sit amet, cursus id.:","816905633-0",10.5);
