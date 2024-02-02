@@ -31,5 +31,5 @@ insert into products (name, description, code, price) values ('Kiss for Corliss,
 insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
 
 CREATE TABLE Sneakers (
-  id INTEWGER PRIMARY KEY
-)
+  id INTEGER PRIMARY KEY
+  
