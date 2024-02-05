@@ -12,11 +12,20 @@ CREATE TABLE products (
   description TEXT,
   price NUMERIC(10, 2)
   interest_id INTEGER,
+  deliviry_time INTEGER,  --veld voor levertijd--
+  category VARCHAR(50) --veld voor categorie--
   
   
 
 );
 
+
+CREATE TABLE Images(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  product id INTEGER,
+  
+  image_url VARCHAR(255)
+)
 
 --
 -- populate with data
