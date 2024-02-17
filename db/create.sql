@@ -68,4 +68,16 @@ insert into releasedatum (name) values ('26-5-2020');
 insert into releasedatum (name) values ('23-6-2018');
 insert into releasedatum (name) values ('2-11-2019');
 
+insert into rating (name) values ('10/10');
+insert into rating (name) values ('9/10');
+insert into rating (name) values ('8/10');
+insert into rating (name) values ('7/10');
+insert into rating (name) values ('6/10');
+insert into rating (name) values ('5/10');
+insert into rating (name) values ('4/10');
+insert into rating (name) values ('3/10');
+insert into rating (name) values ('2/10');
+insert into rating (name) values ('1/10');
+
+
 
