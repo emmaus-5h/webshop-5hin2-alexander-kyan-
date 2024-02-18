@@ -1,4 +1,5 @@
---
+-- bu siteyi bize yaptiranin aminakoyayim avradini sikeyim senin orospunun cocugu tipini siktigim
+
 -- create tables
 --
 
@@ -10,8 +11,8 @@ CREATE TABLE products (
   price NUMERIC(10, 2),
   levertijd_id INTEGER,
   rating_id INTEGER,
-  releasedatum INTEGER
- 
+  releasedatum INTEGER,
+  interest_id INTEGER
 );
 
 CREATE TABLE levertijd(
@@ -33,7 +34,11 @@ CREATE TABLE merk(
  id INTEGER PRIMARY KEY AUTOINCREMENT,
  name VARCHAR(20)
 );
-  
+
+CREATE TABLE interest(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR
+);
 
 
 --
@@ -45,18 +50,18 @@ CREATE TABLE merk(
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Jordan 1 "Fearless"', 'Rood, wit een blauw leer.', '816905633-0', 450.0 , 1, 1, 3);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Air Jordan 4 "Black Cat"', 'Fully zwart suede', '077030122-3',1400.0 , 4, 2, 1);
-insert into products (name, description, code, price, levertijd_id,releasedatum, rating_id) values ('Nike SB dunk low "Chunky dunky", ', 'Nike Dunk low X Ben&jerrys', '445924201-X', 1200.0, 1, 3, 4);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Jordan 1 X off white ', 'Jordan 1 High X Off white (Blauw)', '693155505-7', 2000.0, 4, 4, 1);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Jordan 4 X Off White', 'Jordan 4 X Off white White sail', '686928463-6', 1950.0, 3, 5, 1);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Pizzi Patta', 'The schoenen van de beruchte Pizzi East', '492662523-7', 50000.0, 1, 6, 1);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Lanvin "Leather Curbs"', 'Low premium sneakers', '492662523-7', 790.0, 4, 7, 8);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Amiri MA-1', 'Designer schoenen van het Premium merk amiri', '492662523-7', 732.0, 2, 8, 5);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Balenciaga Runner', 'Designer hardloopschoenen', '492662523-7', 875.0, 2, 9, 9);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('LV Trainers', 'Louis Vuitton leren schoenen', '492662523-7', 1080.0, 1, 10, 1);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('LV Skate Sneaker', 'Louius Vuitton low sneakers', '492662523-7', 1050.0, 4, 11, 5);
-insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id) values ('Maison Mihara Yasuhiro', 'Lage premium schoenen', '492662523-7', 455.0, 3, 12, 4);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,   interest_id) values ('Jordan 1 "Fearless"', 'Rood, wit een blauw leer.', '816905633-0', 450.0 , 1, 1, 3, 1);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,   interest_id) values ('Air Jordan 4 "Black Cat"', 'Fully zwart suede', '077030122-3',1400.0 , 4, 2, 1, 2);
+insert into products (name, description, code, price, levertijd_id,releasedatum, rating_id,   interest_id) values ('Nike SB dunk low "Chunky dunky", ', 'Nike Dunk low X Ben&jerrys', '445924201-X', 1200.0, 1, 3, 4, 2);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,   interest_id) values ('Jordan 1 X off white ', 'Jordan 1 High X Off white (Blauw)', '693155505-7', 2000.0, 4, 4, 1, 2);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,   interest_id) values ('Jordan 4 X Off White', 'Jordan 4 X Off white White sail', '686928463-6', 1950.0, 3, 5, 1, 2);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,  interest_id) values ('Pizzi Patta', 'The schoenen van de beruchte Pizzi East', '492662523-7', 50000.0, 1, 6, 1, 2);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,  interest_id) values ('Lanvin "Leather Curbs"', 'Low premium sneakers', '492662523-7', 790.0, 4, 7, 8, 2);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,  interest_id) values ('Amiri MA-1', 'Designer schoenen van het Premium merk amiri', '492662523-7', 732.0, 2, 8, 5, 2 );
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,  interest_id) values ('Balenciaga Runner', 'Designer hardloopschoenen', '492662523-7', 875.0, 2, 9, 9, 2);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,   interest_id) values ('LV Trainers', 'Louis Vuitton leren schoenen', '492662523-7', 1080.0, 1, 10, 1, 2);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,  interest_id) values ('LV Skate Sneaker', 'Louius Vuitton low sneakers', '492662523-7', 1050.0, 4, 11, 5, 1);
+insert into products (name, description, code, price, levertijd_id, releasedatum, rating_id,  interest_id) values ('Maison Mihara Yasuhiro', 'Lage premium schoenen', '492662523-7', 455.0, 3, 12, 4, 1);
 
 
 --levertijd
@@ -94,6 +99,9 @@ insert into rating (name) values ('2/10');
 insert into rating (name) values ('1/10');
 
 
---
+--interest
+insert into interest (name) values ('Trending');
+insert into interest (name) values ('Old fashion');
+
 
 
