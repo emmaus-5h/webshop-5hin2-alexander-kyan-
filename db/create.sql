@@ -1,4 +1,4 @@
--- bu siteyi bize yaptiranin aminakoyayim avradini sikeyim senin orospunun cocugu tipini siktigim
+
 
 -- create tables
 --
